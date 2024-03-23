@@ -4,6 +4,7 @@ body {
   background-color: #231f20;
   color: white;
   font-family: Arial, sans-serif;
+  overflow: hidden; /* Add this line */
 }
 
 .main-container {
