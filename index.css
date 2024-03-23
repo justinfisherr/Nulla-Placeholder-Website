@@ -1,10 +1,15 @@
+html,
 body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: #231f20;
   color: white;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* Add this line */
 }
 
 .main-container {
