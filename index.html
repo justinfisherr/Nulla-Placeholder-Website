@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nulla-info">
+        <img src="logo_bone_space_black_secondary.svg" alt="" class="logo" />
+        <p class="info-text">Official website coming soon.</p>
+      </div>
+    </div>
+    <footer class="footer">&copy; Nulla, Inc 2024</footer>
+    <script>
+      let colors = ["#FE4768", "#F8F8EB", "#FDDD30", "#615DFF", "#231f20"];
+      let currentColorIndex = 0;
+
+      const logo = document.querySelector(".logo");
+      logo.addEventListener("click", () => {
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+        let newColor = colors[currentColorIndex];
+        document.body.style.backgroundColor = newColor;
+
+        // Adjust text color based on background color
+        if (newColor === "#F8F8EB" || newColor === "#FDDD30") {
+          document.body.style.color = "#231f20";
+        } else {
+          document.body.style.color = "white";
+        }
+      });
+    </script>
+  </body>
+</html>
